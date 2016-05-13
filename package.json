@@ -1,0 +1,36 @@
+{
+  "name": "lodash-checkit",
+  "version": "0.1.0",
+  "description": "mashup of lodash with checkit module",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/_mocha"
+  },
+  "keywords": [
+    "lodash",
+    "checkit"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mjhm/lodash-checkit.git"
+  },
+  "author": "John McLaughlin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mjhm/lodash-checkit/issues"
+  },
+  "homepage": "https://github.com/mjhm/lodash-checkit#readme",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "json5": "^0.5.0",
+    "mocha": "^2.3.4",
+    "rewire": "^2.5.1"
+  },
+  "dependencies": {
+    "checkit": "^0.6.0",
+    "lodash": "^4.11.1"
+  }
+}
