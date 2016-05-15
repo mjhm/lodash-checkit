@@ -22,6 +22,7 @@ checkitKeys.forEach(function (k) {
   }
   var fnName = 'is' + lodash.upperFirst(k);
   if (fnName === 'isContains') fnName = 'isContainerFor'
+  if (fnName === 'isRange') fnName = 'isInRange'
 
   checkitMixins[fnName] = testFn;
 });
