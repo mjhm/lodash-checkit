@@ -23,10 +23,10 @@ checkitKeys.forEach(function (k) {
   if (fnName === 'isContains') fnName = 'isContainerFor'
   if (fnName === 'isRange') fnName = 'isInRange'
   if (re) {
-    checkitRegexDict[fnName] = "from Checkit module's regex validator " + k
+    checkitRegexDict[fnName] = "from Checkit module's regex validator " + '"' + k + '"'
     testFn = function (s) { return re.test(s); }
   } else {
-    checkitOtherDict[fnName] = "from Checkit module's validator " + k
+    checkitOtherDict[fnName] = "from Checkit module's validator " + '"' + k + '"'
     testFn = validatorInstance[k].bind(validatorInstance);
   }
 
