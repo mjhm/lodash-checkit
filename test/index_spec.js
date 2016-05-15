@@ -20,15 +20,23 @@ describe('lodash-checkit', function () {
     });
   });
   describe('other checkit validators', function () {
-    describe('#isRange', function () {
+    describe('#isInRange', function () {
       it('returns true for a number within a range', function () {
-        return expect(_.isRange(3, 2, 5)).to.be.true;
+        return expect(_.isInRange(3, 2, 5)).to.be.true;
       });
       it('returns false for a number before a range', function () {
-        return expect(_.isRange(1, 2, 5)).to.be.false;
+        return expect(_.isInRange(1, 2, 5)).to.be.false;
       });
       it('returns false for a number after a range', function () {
-        return expect(_.isRange(6, 2, 5)).to.be.false;
+        return expect(_.isInRange(6, 2, 5)).to.be.false;
+      });
+      it('returns true for a number on the boundary', function () {
+        return expect(_.isInRange(5, 2, 5)).to.be.true;
+      });
+    });
+    describe('#isBetween', function () {
+      it('returns false for a number on the boundary', function () {
+        return expect(_.isBetween(5, 2, 5)).to.be.false;
       });
     });
     describe('#isRequired (non falsey or 0)', function() {
