@@ -16,14 +16,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mjhm/lodash-checkit.git"
+    "url": "git+https://github.com/originate/lodash-checkit.git"
   },
   "author": "John McLaughlin",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mjhm/lodash-checkit/issues"
+    "url": "https://github.com/originate/lodash-checkit/issues"
   },
-  "homepage": "https://github.com/mjhm/lodash-checkit#readme",
+  "homepage": "https://github.com/originate/lodash-checkit#readme",
   "devDependencies": {
     "chai": "^3.4.1",
     "json5": "^0.5.0",
