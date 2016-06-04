@@ -18,6 +18,14 @@ describe('lodash-checkit', function () {
         return expect(_.isEmail('ab.cd.co')).to.be.false;
       });
     });
+    describe('#isNotEmail', function () {
+      it('returns false for a valid email', function() {
+        return expect(_.isNotEmail('ab@cd.co')).to.be.false;
+      });
+      it('returns true for an invalid email', function() {
+        return expect(_.isNotEmail('ab.cd.co')).to.be.true;
+      });
+    });
   });
   describe('other checkit validators', function () {
     describe('#isInRange', function () {
@@ -32,6 +40,14 @@ describe('lodash-checkit', function () {
       });
       it('returns true for a number on the boundary', function () {
         return expect(_.isInRange(5, 2, 5)).to.be.true;
+      });
+    });
+    describe('#isNotInRange', function () {
+      it('returns false for a number within a range', function () {
+        return expect(_.isNotInRange(3, 2, 5)).to.be.false;
+      });
+      it('returns true for a number before a range', function () {
+        return expect(_.isNotInRange(1, 2, 5)).to.be.true;
       });
     });
     describe('#isBetween', function () {

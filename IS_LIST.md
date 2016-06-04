@@ -50,6 +50,40 @@
 | isNatural | from Checkit module's regex validator "natural" |
 | isNaturalNonZero | from Checkit module's regex validator "naturalNonZero" |
 | isNil | inherited from lodash module |
+| isNotAlpha | from not "isAlpha" |
+| isNotAlphaDash | from not "isAlphaDash" |
+| isNotAlphaNumeric | from not "isAlphaNumeric" |
+| isNotAlphaUnderscore | from not "isAlphaUnderscore" |
+| isNotBase64 | from not "isBase64" |
+| isNotBetween | from not "isBetween" |
+| isNotCamelCase | from not "isCamelCase" |
+| isNotContainerFor | from not "isContainerFor" |
+| isNotDifferent | from not "isDifferent" |
+| isNotEmail | from not "isEmail" |
+| isNotExactLength | from not "isExactLength" |
+| isNotExists | from not "isExists" |
+| isNotGreaterThan | from not "isGreaterThan" |
+| isNotGreaterThanEqualTo | from not "isGreaterThanEqualTo" |
+| isNotInRange | from not "isInRange" |
+| isNotInteger | from not "isInteger" |
+| isNotIpv4 | from not "isIpv4" |
+| isNotIpv6 | from not "isIpv6" |
+| isNotKebabCase | from not "isKebabCase" |
+| isNotLessThan | from not "isLessThan" |
+| isNotLessThanEqualTo | from not "isLessThanEqualTo" |
+| isNotLowerCase | from not "isLowerCase" |
+| isNotLuhn | from not "isLuhn" |
+| isNotMaxLength | from not "isMaxLength" |
+| isNotMinLength | from not "isMinLength" |
+| isNotNatural | from not "isNatural" |
+| isNotNaturalNonZero | from not "isNaturalNonZero" |
+| isNotNumeric | from not "isNumeric" |
+| isNotRequired | from not "isRequired" |
+| isNotSnakeCase | from not "isSnakeCase" |
+| isNotStartCase | from not "isStartCase" |
+| isNotUpperCase | from not "isUpperCase" |
+| isNotUrl | from not "isUrl" |
+| isNotUuid | from not "isUuid" |
 | isNull | inherited from lodash module |
 | isNumber | inherited from lodash module |
 | isNumeric | from Checkit module's validator "numeric" |

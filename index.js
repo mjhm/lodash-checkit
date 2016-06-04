@@ -5,6 +5,9 @@ var lodashNativeDict = {};
 var checkitRegexDict = {};
 var checkitOtherDict = {};
 var lodashCaseDict = {};
+var notDict = {};
+
+var checkitMixins = {};
 
 Object.keys(lodash).filter(function (fn) { return /^is/.test(fn); }).forEach(function (key) {
   lodashNativeDict[key] = 'inherited from lodash module';
@@ -12,7 +15,6 @@ Object.keys(lodash).filter(function (fn) { return /^is/.test(fn); }).forEach(fun
 
 var validatorInstance = new Checkit.Validator(null, {language: 'en'});
 var checkitKeys = Object.keys(Checkit.Regex).concat(Object.keys(Checkit.Validator.prototype));
-var checkitMixins = {};
 checkitKeys.forEach(function (k) {
   var testFn;
   if (lodashNativeDict[k]) return;
@@ -46,6 +48,15 @@ Object.keys(lodash).forEach(function (ldKey) {
   }
 });
 
-var checkitValidator
+Object.keys(checkitMixins).forEach(function (ciKey) {
+  var notName = ciKey.replace(/^is/, 'isNot');
+  if (! lodash[notName] && !checkitMixins[notName]) {
+    checkitMixins[notName] = function () {
+      return ! checkitMixins[ciKey].apply(null, arguments);
+    };
+    notDict[notName] = 'from not "' + ciKey + '"';
+  }
+});
+
 
 module.exports = lodash.runInContext().mixin(checkitMixins);
