@@ -12,15 +12,18 @@ var notDict = _.__get__('notDict');
 
 var all = _.assign({}, lodashNativeDict, checkitRegexDict, checkitOtherDict, lodashCaseDict, notDict);
 
-var out = [
+var out = [ fs.readFileSync('./HEAD.md', 'utf8') ];
+
+out.push(
   '# Lodash-Checkit "isXxxx" function list',
   '| Name | From |',
   '| ---  | ---  |'
-];
+);
 
 Object.keys(all).sort().forEach(function (fnName) {
   out.push('| ' + fnName + ' | ' + all[fnName] + ' |');
 });
 out.push('');
 
-fs.writeFileSync('./IS_LIST.md', out.join('\n'));
+
+fs.writeFileSync('./README.md', out.join('\n'));
