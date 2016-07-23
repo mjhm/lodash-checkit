@@ -95,6 +95,7 @@ This is an extension of lodash with extra `isXxxx` methods from the Checkit modu
 | isNotRequired | from not "isRequired" |
 | isNotSnakeCase | from not "isSnakeCase" |
 | isNotStartCase | from not "isStartCase" |
+| isNotString | from not "isString" |
 | isNotUpperCase | from not "isUpperCase" |
 | isNotUrl | from not "isUrl" |
 | isNotUuid | from not "isUuid" |
@@ -110,7 +111,7 @@ This is an extension of lodash with extra `isXxxx` methods from the Checkit modu
 | isSet | inherited from lodash module |
 | isSnakeCase | from lodash "...Case" function |
 | isStartCase | from lodash "...Case" function |
-| isString | inherited from lodash module |
+| isString | from Checkit module's validator "string" |
 | isSymbol | inherited from lodash module |
 | isTypedArray | inherited from lodash module |
 | isUndefined | inherited from lodash module |
