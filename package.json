@@ -27,7 +27,7 @@
   "devDependencies": {
     "chai": "^3.4.1",
     "dependency-lint": "^4.0.1",
-    "mocha": "^2.3.4",
+    "mocha": "^3.0.2",
     "rewire": "^2.5.1"
   },
   "dependencies": {
