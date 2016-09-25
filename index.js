@@ -17,11 +17,11 @@ var validatorInstance = new Checkit.Validator(null, {language: 'en'});
 var checkitKeys = Object.keys(Checkit.Regex).concat(Object.keys(Checkit.Validator.prototype));
 checkitKeys.forEach(function (k) {
   var testFn;
-  if (lodashNativeDict[k]) return;
   if (k === 'accepted') return;
   if (k === 'matchesField') return;
-  var re = Checkit.Regex[k];
   var fnName = 'is' + lodash.upperFirst(k);
+  if (lodashNativeDict[fnName]) return;
+  var re = Checkit.Regex[k];
   if (fnName === 'isContains') fnName = 'isContainerFor'
   if (fnName === 'isRange') fnName = 'isInRange'
   if (re) {
