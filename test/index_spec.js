@@ -100,8 +100,8 @@ describe('lodash-checkit', function () {
       expect(this.checkitMixins).has.property('isEmail');
       return expect(_.isEmail).to.equal(this.checkitMixins.isEmail);
     });
-    it('isNumber was not added through the mixin', function () {
-      return expect(this.checkitMixins).not.to.have.property('isNumber');
+    it('isInteger was not added through the mixin', function () {
+      return expect(this.checkitMixins).not.to.have.property('isInteger');
     });
   });
 });
