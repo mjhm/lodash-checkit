@@ -25,7 +25,8 @@ checkitKeys.forEach(function (k) {
   if (fnName === 'isContains') fnName = 'isContainerFor'
   if (fnName === 'isRange') fnName = 'isInRange'
   if (re) {
-    checkitRegexDict[fnName] = 'checkit "' + k + '" regex ' + re.toString() + ''
+    checkitRegexDict[fnName] = 'checkit "' + k + '" regex ' +
+      re.toString().replace(/\|/g, '&#124;');
     testFn = function (s) { return re.test(s); }
   } else {
     checkitOtherDict[fnName] = 'checkit validator "' + k + '"'

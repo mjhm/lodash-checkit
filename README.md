@@ -24,7 +24,7 @@ This is an extension of lodash with extra `isXxxx` methods from the Checkit modu
 | isArrayBuffer | lodash |
 | isArrayLike | lodash |
 | isArrayLikeObject | lodash |
-| isBase64 | checkit "base64" regex /^(?:[A-Za-z0-9+\/]{4})*(?:[A-Za-z0-9+\/]{2}==|[A-Za-z0-9+\/]{3}=)?$/ |
+| isBase64 | checkit "base64" regex /^(?:[A-Za-z0-9+\/]{4})*(?:[A-Za-z0-9+\/]{2}==&#124;[A-Za-z0-9+\/]{3}=)?$/ |
 | isBetween | checkit validator "between" |
 | isBoolean | lodash |
 | isBuffer | lodash |
@@ -46,14 +46,14 @@ This is an extension of lodash with extra `isXxxx` methods from the Checkit modu
 | isGreaterThanEqualTo | checkit validator "greaterThanEqualTo" |
 | isInRange | checkit validator "range" |
 | isInteger | lodash |
-| isIpv4 | checkit "ipv4" regex /^((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){3}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})$/i |
-| isIpv6 | checkit "ipv6" regex /^((?=.*::)(?!.*::.+::)(::)?([\dA-F]{1,4}:(:|\b)|){5}|([\dA-F]{1,4}:){6})((([\dA-F]{1,4}((?!\3)::|:\b|$))|(?!\2\3)){2}|(((2[0-4]|1\d|[1-9])?\d|25[0-5])\.?\b){4})$/i |
+| isIpv4 | checkit "ipv4" regex /^((25[0-5]&#124;2[0-4][0-9]&#124;1[0-9]{2}&#124;[0-9]{1,2})\.){3}(25[0-5]&#124;2[0-4][0-9]&#124;1[0-9]{2}&#124;[0-9]{1,2})$/i |
+| isIpv6 | checkit "ipv6" regex /^((?=.*::)(?!.*::.+::)(::)?([\dA-F]{1,4}:(:&#124;\b)&#124;){5}&#124;([\dA-F]{1,4}:){6})((([\dA-F]{1,4}((?!\3)::&#124;:\b&#124;$))&#124;(?!\2\3)){2}&#124;(((2[0-4]&#124;1\d&#124;[1-9])?\d&#124;25[0-5])\.?\b){4})$/i |
 | isKebabCase | lodash "kebabCase" |
 | isLength | lodash |
 | isLessThan | checkit validator "lessThan" |
 | isLessThanEqualTo | checkit validator "lessThanEqualTo" |
 | isLowerCase | lodash "lowerCase" |
-| isLuhn | checkit "luhn" regex /^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$/ |
+| isLuhn | checkit "luhn" regex /^(?:4[0-9]{12}(?:[0-9]{3})?&#124;5[1-5][0-9]{14}&#124;6(?:011&#124;5[0-9][0-9])[0-9]{12}&#124;3[47][0-9]{13}&#124;3(?:0[0-5]&#124;[68][0-9])[0-9]{11}&#124;(?:2131&#124;1800&#124;35\d{3})\d{11})$/ |
 | isMap | lodash |
 | isMatch | lodash |
 | isMatchWith | lodash |
@@ -114,7 +114,7 @@ This is an extension of lodash with extra `isXxxx` methods from the Checkit modu
 | isTypedArray | lodash |
 | isUndefined | lodash |
 | isUpperCase | lodash "upperCase" |
-| isUrl | checkit "url" regex /^((http|https):\/\/(\w+:{0,1}\w*@)?(\S+)|)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?$/ |
+| isUrl | checkit "url" regex /^((http&#124;https):\/\/(\w+:{0,1}\w*@)?(\S+)&#124;)(:[0-9]+)?(\/&#124;\/([\w#!:.?+=&%@!\-\/]))?$/ |
 | isUuid | checkit "uuid" regex /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i |
 | isWeakMap | lodash |
 | isWeakSet | lodash |
