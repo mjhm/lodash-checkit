@@ -19,51 +19,51 @@ This is an extension of lodash with extra `isXxxx` methods from the Checkit modu
 | isAlphaDash | checkit "alphaDash" regex /^[a-z0-9_\-]+$/i |
 | isAlphaNumeric | checkit "alphaNumeric" regex /^[a-z0-9]+$/i |
 | isAlphaUnderscore | checkit "alphaUnderscore" regex /^[a-z0-9_]+$/i |
-| isArguments | lodash |
-| isArray | lodash |
-| isArrayBuffer | lodash |
-| isArrayLike | lodash |
-| isArrayLikeObject | lodash |
+| isArguments | lodash [isArguments](https://lodash.com/docs/#isArguments) |
+| isArray | lodash [isArray](https://lodash.com/docs/#isArray) |
+| isArrayBuffer | lodash [isArrayBuffer](https://lodash.com/docs/#isArrayBuffer) |
+| isArrayLike | lodash [isArrayLike](https://lodash.com/docs/#isArrayLike) |
+| isArrayLikeObject | lodash [isArrayLikeObject](https://lodash.com/docs/#isArrayLikeObject) |
 | isBase64 | checkit "base64" regex /^(?:[A-Za-z0-9+\/]{4})*(?:[A-Za-z0-9+\/]{2}==&#124;[A-Za-z0-9+\/]{3}=)?$/ |
-| isBetween | checkit validator "between" |
-| isBoolean | lodash |
-| isBuffer | lodash |
-| isCamelCase | lodash "camelCase" |
-| isContainerFor | checkit validator "contains" |
-| isDate | lodash |
-| isDifferent | checkit validator "different" |
-| isElement | lodash |
+| isBetween | checkit validator [between](https://github.com/tgriesser/checkit#available-validators) |
+| isBoolean | lodash [isBoolean](https://lodash.com/docs/#isBoolean) |
+| isBuffer | lodash [isBuffer](https://lodash.com/docs/#isBuffer) |
+| isCamelCase | lodash [camelCase](https://lodash.com/docs/#camelCase) |
+| isContainerFor | checkit validator [contains](https://github.com/tgriesser/checkit#available-validators) |
+| isDate | lodash [isDate](https://lodash.com/docs/#isDate) |
+| isDifferent | checkit validator [different](https://github.com/tgriesser/checkit#available-validators) |
+| isElement | lodash [isElement](https://lodash.com/docs/#isElement) |
 | isEmail | checkit "email" regex /^(.+)@(.+)\.(.+)$/i |
-| isEmpty | lodash |
-| isEqual | lodash |
-| isEqualWith | lodash |
-| isError | lodash |
-| isExactLength | checkit validator "exactLength" |
-| isExists | checkit validator "exists" |
-| isFinite | lodash |
-| isFunction | lodash |
-| isGreaterThan | checkit validator "greaterThan" |
-| isGreaterThanEqualTo | checkit validator "greaterThanEqualTo" |
-| isInRange | checkit validator "range" |
-| isInteger | lodash |
+| isEmpty | lodash [isEmpty](https://lodash.com/docs/#isEmpty) |
+| isEqual | lodash [isEqual](https://lodash.com/docs/#isEqual) |
+| isEqualWith | lodash [isEqualWith](https://lodash.com/docs/#isEqualWith) |
+| isError | lodash [isError](https://lodash.com/docs/#isError) |
+| isExactLength | checkit validator [exactLength](https://github.com/tgriesser/checkit#available-validators) |
+| isExists | checkit validator [exists](https://github.com/tgriesser/checkit#available-validators) |
+| isFinite | lodash [isFinite](https://lodash.com/docs/#isFinite) |
+| isFunction | lodash [isFunction](https://lodash.com/docs/#isFunction) |
+| isGreaterThan | checkit validator [greaterThan](https://github.com/tgriesser/checkit#available-validators) |
+| isGreaterThanEqualTo | checkit validator [greaterThanEqualTo](https://github.com/tgriesser/checkit#available-validators) |
+| isInRange | checkit validator [range](https://github.com/tgriesser/checkit#available-validators) |
+| isInteger | lodash [isInteger](https://lodash.com/docs/#isInteger) |
 | isIpv4 | checkit "ipv4" regex /^((25[0-5]&#124;2[0-4][0-9]&#124;1[0-9]{2}&#124;[0-9]{1,2})\.){3}(25[0-5]&#124;2[0-4][0-9]&#124;1[0-9]{2}&#124;[0-9]{1,2})$/i |
 | isIpv6 | checkit "ipv6" regex /^((?=.*::)(?!.*::.+::)(::)?([\dA-F]{1,4}:(:&#124;\b)&#124;){5}&#124;([\dA-F]{1,4}:){6})((([\dA-F]{1,4}((?!\3)::&#124;:\b&#124;$))&#124;(?!\2\3)){2}&#124;(((2[0-4]&#124;1\d&#124;[1-9])?\d&#124;25[0-5])\.?\b){4})$/i |
-| isKebabCase | lodash "kebabCase" |
-| isLength | lodash |
-| isLessThan | checkit validator "lessThan" |
-| isLessThanEqualTo | checkit validator "lessThanEqualTo" |
-| isLowerCase | lodash "lowerCase" |
+| isKebabCase | lodash [kebabCase](https://lodash.com/docs/#kebabCase) |
+| isLength | lodash [isLength](https://lodash.com/docs/#isLength) |
+| isLessThan | checkit validator [lessThan](https://github.com/tgriesser/checkit#available-validators) |
+| isLessThanEqualTo | checkit validator [lessThanEqualTo](https://github.com/tgriesser/checkit#available-validators) |
+| isLowerCase | lodash [lowerCase](https://lodash.com/docs/#lowerCase) |
 | isLuhn | checkit "luhn" regex /^(?:4[0-9]{12}(?:[0-9]{3})?&#124;5[1-5][0-9]{14}&#124;6(?:011&#124;5[0-9][0-9])[0-9]{12}&#124;3[47][0-9]{13}&#124;3(?:0[0-5]&#124;[68][0-9])[0-9]{11}&#124;(?:2131&#124;1800&#124;35\d{3})\d{11})$/ |
-| isMap | lodash |
-| isMatch | lodash |
-| isMatchWith | lodash |
-| isMaxLength | checkit validator "maxLength" |
-| isMinLength | checkit validator "minLength" |
-| isNaN | lodash |
-| isNative | lodash |
+| isMap | lodash [isMap](https://lodash.com/docs/#isMap) |
+| isMatch | lodash [isMatch](https://lodash.com/docs/#isMatch) |
+| isMatchWith | lodash [isMatchWith](https://lodash.com/docs/#isMatchWith) |
+| isMaxLength | checkit validator [maxLength](https://github.com/tgriesser/checkit#available-validators) |
+| isMinLength | checkit validator [minLength](https://github.com/tgriesser/checkit#available-validators) |
+| isNaN | lodash [isNaN](https://lodash.com/docs/#isNaN) |
+| isNative | lodash [isNative](https://lodash.com/docs/#isNative) |
 | isNatural | checkit "natural" regex /^[0-9]+$/i |
 | isNaturalNonZero | checkit "naturalNonZero" regex /^[1-9][0-9]*$/i |
-| isNil | lodash |
+| isNil | lodash [isNil](https://lodash.com/docs/#isNil) |
 | isNotAlpha | not "isAlpha" |
 | isNotAlphaDash | not "isAlphaDash" |
 | isNotAlphaNumeric | not "isAlphaNumeric" |
@@ -97,24 +97,24 @@ This is an extension of lodash with extra `isXxxx` methods from the Checkit modu
 | isNotUpperCase | not "isUpperCase" |
 | isNotUrl | not "isUrl" |
 | isNotUuid | not "isUuid" |
-| isNull | lodash |
-| isNumber | lodash |
-| isNumeric | checkit validator "numeric" |
-| isObject | lodash |
-| isObjectLike | lodash |
-| isPlainObject | lodash |
-| isRegExp | lodash |
-| isRequired | checkit validator "required" |
-| isSafeInteger | lodash |
-| isSet | lodash |
-| isSnakeCase | lodash "snakeCase" |
-| isStartCase | lodash "startCase" |
-| isString | lodash |
-| isSymbol | lodash |
-| isTypedArray | lodash |
-| isUndefined | lodash |
-| isUpperCase | lodash "upperCase" |
+| isNull | lodash [isNull](https://lodash.com/docs/#isNull) |
+| isNumber | lodash [isNumber](https://lodash.com/docs/#isNumber) |
+| isNumeric | checkit validator [numeric](https://github.com/tgriesser/checkit#available-validators) |
+| isObject | lodash [isObject](https://lodash.com/docs/#isObject) |
+| isObjectLike | lodash [isObjectLike](https://lodash.com/docs/#isObjectLike) |
+| isPlainObject | lodash [isPlainObject](https://lodash.com/docs/#isPlainObject) |
+| isRegExp | lodash [isRegExp](https://lodash.com/docs/#isRegExp) |
+| isRequired | checkit validator [required](https://github.com/tgriesser/checkit#available-validators) |
+| isSafeInteger | lodash [isSafeInteger](https://lodash.com/docs/#isSafeInteger) |
+| isSet | lodash [isSet](https://lodash.com/docs/#isSet) |
+| isSnakeCase | lodash [snakeCase](https://lodash.com/docs/#snakeCase) |
+| isStartCase | lodash [startCase](https://lodash.com/docs/#startCase) |
+| isString | lodash [isString](https://lodash.com/docs/#isString) |
+| isSymbol | lodash [isSymbol](https://lodash.com/docs/#isSymbol) |
+| isTypedArray | lodash [isTypedArray](https://lodash.com/docs/#isTypedArray) |
+| isUndefined | lodash [isUndefined](https://lodash.com/docs/#isUndefined) |
+| isUpperCase | lodash [upperCase](https://lodash.com/docs/#upperCase) |
 | isUrl | checkit "url" regex /^((http&#124;https):\/\/(\w+:{0,1}\w*@)?(\S+)&#124;)(:[0-9]+)?(\/&#124;\/([\w#!:.?+=&%@!\-\/]))?$/ |
 | isUuid | checkit "uuid" regex /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i |
-| isWeakMap | lodash |
-| isWeakSet | lodash |
+| isWeakMap | lodash [isWeakMap](https://lodash.com/docs/#isWeakMap) |
+| isWeakSet | lodash [isWeakSet](https://lodash.com/docs/#isWeakSet) |

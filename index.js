@@ -10,7 +10,7 @@ var notDict = {};
 var checkitMixins = {};
 
 Object.keys(lodash).filter(function (fn) { return /^is/.test(fn); }).forEach(function (key) {
-  lodashNativeDict[key] = 'lodash';
+  lodashNativeDict[key] = 'lodash [' + key + '](https://lodash.com/docs/#' + key + ')';
 });
 
 var validatorInstance = new Checkit.Validator(null, {language: 'en'});
@@ -29,7 +29,8 @@ checkitKeys.forEach(function (k) {
       re.toString().replace(/\|/g, '&#124;');
     testFn = function (s) { return re.test(s); }
   } else {
-    checkitOtherDict[fnName] = 'checkit validator "' + k + '"'
+    checkitOtherDict[fnName] =
+      'checkit validator [' + k + '](https://github.com/tgriesser/checkit#available-validators)'
     testFn = validatorInstance[k].bind(validatorInstance);
   }
 
@@ -44,7 +45,7 @@ Object.keys(lodash).forEach(function (ldKey) {
       return s === lodash[ldKey](s);
     };
     var fnName = 'is' + lodash.upperFirst(ldKey)
-    lodashCaseDict[fnName] = 'lodash "' + ldKey + '"';
+    lodashCaseDict[fnName] = 'lodash [' + ldKey + '](https://lodash.com/docs/#' + ldKey +')';
     checkitMixins[fnName] = testFn;
   }
 });
