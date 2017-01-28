@@ -10,7 +10,7 @@ var notDict = {};
 var checkitMixins = {};
 
 Object.keys(lodash).filter(function (fn) { return /^is/.test(fn); }).forEach(function (key) {
-  lodashNativeDict[key] = 'inherited from lodash module';
+  lodashNativeDict[key] = 'lodash';
 });
 
 var validatorInstance = new Checkit.Validator(null, {language: 'en'});
@@ -25,10 +25,10 @@ checkitKeys.forEach(function (k) {
   if (fnName === 'isContains') fnName = 'isContainerFor'
   if (fnName === 'isRange') fnName = 'isInRange'
   if (re) {
-    checkitRegexDict[fnName] = "from Checkit module's regex validator " + '"' + k + '"'
+    checkitRegexDict[fnName] = 'checkit "' + k + '" regex ' + re.toString() + ''
     testFn = function (s) { return re.test(s); }
   } else {
-    checkitOtherDict[fnName] = "from Checkit module's validator " + '"' + k + '"'
+    checkitOtherDict[fnName] = 'checkit validator "' + k + '"'
     testFn = validatorInstance[k].bind(validatorInstance);
   }
 
@@ -43,7 +43,7 @@ Object.keys(lodash).forEach(function (ldKey) {
       return s === lodash[ldKey](s);
     };
     var fnName = 'is' + lodash.upperFirst(ldKey)
-    lodashCaseDict[fnName] = 'from lodash "...Case" function';
+    lodashCaseDict[fnName] = 'lodash "' + ldKey + '"';
     checkitMixins[fnName] = testFn;
   }
 });
@@ -54,7 +54,7 @@ Object.keys(checkitMixins).forEach(function (ciKey) {
     checkitMixins[notName] = function () {
       return ! checkitMixins[ciKey].apply(null, arguments);
     };
-    notDict[notName] = 'from not "' + ciKey + '"';
+    notDict[notName] = 'not "' + ciKey + '"';
   }
 });
 

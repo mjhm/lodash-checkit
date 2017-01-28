@@ -15,108 +15,106 @@ This is an extension of lodash with extra `isXxxx` methods from the Checkit modu
 # Lodash-Checkit "isXxxx" function list
 | Name | From |
 | ---  | ---  |
-| isAlpha | from Checkit module's regex validator "alpha" |
-| isAlphaDash | from Checkit module's regex validator "alphaDash" |
-| isAlphaNumeric | from Checkit module's regex validator "alphaNumeric" |
-| isAlphaUnderscore | from Checkit module's regex validator "alphaUnderscore" |
-| isArguments | inherited from lodash module |
-| isArray | inherited from lodash module |
-| isArrayBuffer | inherited from lodash module |
-| isArrayLike | inherited from lodash module |
-| isArrayLikeObject | inherited from lodash module |
-| isBase64 | from Checkit module's regex validator "base64" |
-| isBetween | from Checkit module's validator "between" |
-| isBoolean | inherited from lodash module |
-| isBuffer | inherited from lodash module |
-| isCamelCase | from lodash "...Case" function |
-| isContainerFor | from Checkit module's validator "contains" |
-| isDate | inherited from lodash module |
-| isDifferent | from Checkit module's validator "different" |
-| isElement | inherited from lodash module |
-| isEmail | from Checkit module's regex validator "email" |
-| isEmpty | inherited from lodash module |
-| isEqual | inherited from lodash module |
-| isEqualWith | inherited from lodash module |
-| isError | inherited from lodash module |
-| isExactLength | from Checkit module's validator "exactLength" |
-| isExists | from Checkit module's validator "exists" |
-| isFinite | inherited from lodash module |
-| isFunction | inherited from lodash module |
-| isGreaterThan | from Checkit module's validator "greaterThan" |
-| isGreaterThanEqualTo | from Checkit module's validator "greaterThanEqualTo" |
-| isInRange | from Checkit module's validator "range" |
-| isInteger | from Checkit module's regex validator "integer" |
-| isIpv4 | from Checkit module's regex validator "ipv4" |
-| isIpv6 | from Checkit module's regex validator "ipv6" |
-| isKebabCase | from lodash "...Case" function |
-| isLength | inherited from lodash module |
-| isLessThan | from Checkit module's validator "lessThan" |
-| isLessThanEqualTo | from Checkit module's validator "lessThanEqualTo" |
-| isLowerCase | from lodash "...Case" function |
-| isLuhn | from Checkit module's regex validator "luhn" |
-| isMap | inherited from lodash module |
-| isMatch | inherited from lodash module |
-| isMatchWith | inherited from lodash module |
-| isMaxLength | from Checkit module's validator "maxLength" |
-| isMinLength | from Checkit module's validator "minLength" |
-| isNaN | inherited from lodash module |
-| isNative | inherited from lodash module |
-| isNatural | from Checkit module's regex validator "natural" |
-| isNaturalNonZero | from Checkit module's regex validator "naturalNonZero" |
-| isNil | inherited from lodash module |
-| isNotAlpha | from not "isAlpha" |
-| isNotAlphaDash | from not "isAlphaDash" |
-| isNotAlphaNumeric | from not "isAlphaNumeric" |
-| isNotAlphaUnderscore | from not "isAlphaUnderscore" |
-| isNotBase64 | from not "isBase64" |
-| isNotBetween | from not "isBetween" |
-| isNotCamelCase | from not "isCamelCase" |
-| isNotContainerFor | from not "isContainerFor" |
-| isNotDifferent | from not "isDifferent" |
-| isNotEmail | from not "isEmail" |
-| isNotExactLength | from not "isExactLength" |
-| isNotExists | from not "isExists" |
-| isNotGreaterThan | from not "isGreaterThan" |
-| isNotGreaterThanEqualTo | from not "isGreaterThanEqualTo" |
-| isNotInRange | from not "isInRange" |
-| isNotInteger | from not "isInteger" |
-| isNotIpv4 | from not "isIpv4" |
-| isNotIpv6 | from not "isIpv6" |
-| isNotKebabCase | from not "isKebabCase" |
-| isNotLessThan | from not "isLessThan" |
-| isNotLessThanEqualTo | from not "isLessThanEqualTo" |
-| isNotLowerCase | from not "isLowerCase" |
-| isNotLuhn | from not "isLuhn" |
-| isNotMaxLength | from not "isMaxLength" |
-| isNotMinLength | from not "isMinLength" |
-| isNotNatural | from not "isNatural" |
-| isNotNaturalNonZero | from not "isNaturalNonZero" |
-| isNotNumeric | from not "isNumeric" |
-| isNotRequired | from not "isRequired" |
-| isNotSnakeCase | from not "isSnakeCase" |
-| isNotStartCase | from not "isStartCase" |
-| isNotString | from not "isString" |
-| isNotUpperCase | from not "isUpperCase" |
-| isNotUrl | from not "isUrl" |
-| isNotUuid | from not "isUuid" |
-| isNull | inherited from lodash module |
-| isNumber | inherited from lodash module |
-| isNumeric | from Checkit module's validator "numeric" |
-| isObject | inherited from lodash module |
-| isObjectLike | inherited from lodash module |
-| isPlainObject | inherited from lodash module |
-| isRegExp | inherited from lodash module |
-| isRequired | from Checkit module's validator "required" |
-| isSafeInteger | inherited from lodash module |
-| isSet | inherited from lodash module |
-| isSnakeCase | from lodash "...Case" function |
-| isStartCase | from lodash "...Case" function |
-| isString | from Checkit module's validator "string" |
-| isSymbol | inherited from lodash module |
-| isTypedArray | inherited from lodash module |
-| isUndefined | inherited from lodash module |
-| isUpperCase | from lodash "...Case" function |
-| isUrl | from Checkit module's regex validator "url" |
-| isUuid | from Checkit module's regex validator "uuid" |
-| isWeakMap | inherited from lodash module |
-| isWeakSet | inherited from lodash module |
+| isAlpha | checkit "alpha" regex //^[a-z]+$/i/ |
+| isAlphaDash | checkit "alphaDash" regex //^[a-z0-9_\-]+$/i/ |
+| isAlphaNumeric | checkit "alphaNumeric" regex //^[a-z0-9]+$/i/ |
+| isAlphaUnderscore | checkit "alphaUnderscore" regex //^[a-z0-9_]+$/i/ |
+| isArguments | lodash |
+| isArray | lodash |
+| isArrayBuffer | lodash |
+| isArrayLike | lodash |
+| isArrayLikeObject | lodash |
+| isBase64 | checkit "base64" regex //^(?:[A-Za-z0-9+\/]{4})*(?:[A-Za-z0-9+\/]{2}==|[A-Za-z0-9+\/]{3}=)?$// |
+| isBetween | checkit validator "between" |
+| isBoolean | lodash |
+| isBuffer | lodash |
+| isCamelCase | lodash "camelCase" |
+| isContainerFor | checkit validator "contains" |
+| isDate | lodash |
+| isDifferent | checkit validator "different" |
+| isElement | lodash |
+| isEmail | checkit "email" regex //^(.+)@(.+)\.(.+)$/i/ |
+| isEmpty | lodash |
+| isEqual | lodash |
+| isEqualWith | lodash |
+| isError | lodash |
+| isExactLength | checkit validator "exactLength" |
+| isExists | checkit validator "exists" |
+| isFinite | lodash |
+| isFunction | lodash |
+| isGreaterThan | checkit validator "greaterThan" |
+| isGreaterThanEqualTo | checkit validator "greaterThanEqualTo" |
+| isInRange | checkit validator "range" |
+| isInteger | lodash |
+| isIpv4 | checkit "ipv4" regex //^((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){3}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})$/i/ |
+| isIpv6 | checkit "ipv6" regex //^((?=.*::)(?!.*::.+::)(::)?([\dA-F]{1,4}:(:|\b)|){5}|([\dA-F]{1,4}:){6})((([\dA-F]{1,4}((?!\3)::|:\b|$))|(?!\2\3)){2}|(((2[0-4]|1\d|[1-9])?\d|25[0-5])\.?\b){4})$/i/ |
+| isKebabCase | lodash "kebabCase" |
+| isLength | lodash |
+| isLessThan | checkit validator "lessThan" |
+| isLessThanEqualTo | checkit validator "lessThanEqualTo" |
+| isLowerCase | lodash "lowerCase" |
+| isLuhn | checkit "luhn" regex //^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$// |
+| isMap | lodash |
+| isMatch | lodash |
+| isMatchWith | lodash |
+| isMaxLength | checkit validator "maxLength" |
+| isMinLength | checkit validator "minLength" |
+| isNaN | lodash |
+| isNative | lodash |
+| isNatural | checkit "natural" regex //^[0-9]+$/i/ |
+| isNaturalNonZero | checkit "naturalNonZero" regex //^[1-9][0-9]*$/i/ |
+| isNil | lodash |
+| isNotAlpha | not "isAlpha" |
+| isNotAlphaDash | not "isAlphaDash" |
+| isNotAlphaNumeric | not "isAlphaNumeric" |
+| isNotAlphaUnderscore | not "isAlphaUnderscore" |
+| isNotBase64 | not "isBase64" |
+| isNotBetween | not "isBetween" |
+| isNotCamelCase | not "isCamelCase" |
+| isNotContainerFor | not "isContainerFor" |
+| isNotDifferent | not "isDifferent" |
+| isNotEmail | not "isEmail" |
+| isNotExactLength | not "isExactLength" |
+| isNotExists | not "isExists" |
+| isNotGreaterThan | not "isGreaterThan" |
+| isNotGreaterThanEqualTo | not "isGreaterThanEqualTo" |
+| isNotInRange | not "isInRange" |
+| isNotIpv4 | not "isIpv4" |
+| isNotIpv6 | not "isIpv6" |
+| isNotKebabCase | not "isKebabCase" |
+| isNotLessThan | not "isLessThan" |
+| isNotLessThanEqualTo | not "isLessThanEqualTo" |
+| isNotLowerCase | not "isLowerCase" |
+| isNotLuhn | not "isLuhn" |
+| isNotMaxLength | not "isMaxLength" |
+| isNotMinLength | not "isMinLength" |
+| isNotNatural | not "isNatural" |
+| isNotNaturalNonZero | not "isNaturalNonZero" |
+| isNotNumeric | not "isNumeric" |
+| isNotRequired | not "isRequired" |
+| isNotSnakeCase | not "isSnakeCase" |
+| isNotStartCase | not "isStartCase" |
+| isNotUpperCase | not "isUpperCase" |
+| isNotUrl | not "isUrl" |
+| isNotUuid | not "isUuid" |
+| isNull | lodash |
+| isNumber | lodash |
+| isNumeric | checkit validator "numeric" |
+| isObject | lodash |
+| isObjectLike | lodash |
+| isPlainObject | lodash |
+| isRegExp | lodash |
+| isRequired | checkit validator "required" |
+| isSafeInteger | lodash |
+| isSet | lodash |
+| isSnakeCase | lodash "snakeCase" |
+| isStartCase | lodash "startCase" |
+| isString | lodash |
+| isSymbol | lodash |
+| isTypedArray | lodash |
+| isUndefined | lodash |
+| isUpperCase | lodash "upperCase" |
+| isUrl | checkit "url" regex //^((http|https):\/\/(\w+:{0,1}\w*@)?(\S+)|)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?$// |
+| isUuid | checkit "uuid" regex //^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i/ |
+| isWeakMap | lodash |
+| isWeakSet | lodash |
