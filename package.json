@@ -1,6 +1,6 @@
 {
   "name": "lodash-checkit",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "mashup of lodash with checkit module",
   "main": "index.js",
   "directories": {
