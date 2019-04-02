@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "./node_modules/.bin/mocha",
-    "prepublish": "node ./scripts/prepublish.js"
+    "prepare": "node ./scripts/prepublish.js"
   },
   "keywords": [
     "lodash",
@@ -27,8 +27,8 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "dependency-lint": "^5.0.1",
-    "mocha": "^3.5.3",
-    "rewire": "^2.5.1"
+    "mocha": "^6.0.2",
+    "rewire": "^4.0.1"
   },
   "dependencies": {
     "checkit": "^0.7.0",
