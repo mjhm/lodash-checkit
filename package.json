@@ -32,6 +32,6 @@
   },
   "dependencies": {
     "checkit": "^0.7.0",
-    "lodash": "^4.17.11"
+    "lodash": "^4.17.15"
   }
 }
