@@ -1,6 +1,5 @@
 # lodash-checkit
 
-![CircleCI badge](https://circleci.com/gh/Originate/lodash-checkit.svg?style=shield&circle-token=:circle-token)
 [![lodash-checkit](https://img.shields.io/npm/v/lodash-checkit.svg)](https://www.npmjs.com/package/lodash-checkit)
 
 Related modules: [![lodash-match-pattern](https://img.shields.io/npm/v/lodash-match-pattern.svg?label=lodash-match-pattern)](https://www.npmjs.com/package/lodash-match-pattern)
